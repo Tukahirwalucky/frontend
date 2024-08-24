@@ -1,0 +1,56 @@
+/* Ensure the container takes full width of the viewport */
+.admin-dashboard {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Style for the navigation sidebar */
+.admin-nav {
+    width: 250px; /* Adjust width if needed */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 100%; /* Full height of the container */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional: Add a shadow for better separation */
+    display: flex;
+    flex-direction: column; /* Ensure the list items stack vertically */
+}
+
+.admin-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+.admin-nav ul li {
+    margin-bottom: 15px; /* Add spacing between items */
+}
+
+.admin-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size if needed */
+}
+
+.admin-nav ul li a:hover {
+    text-decoration: underline; /* Add underline on hover for better UX */
+}
+
+/* Style for the content area */
+.admin-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background color for the content area */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Optional: Add some spacing around the dashboard */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Add a default font */
+}
+
+h1 {
+    margin-top: 0; /* Remove top margin from h1 to align with content */
+}
